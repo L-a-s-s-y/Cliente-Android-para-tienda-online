@@ -1,0 +1,64 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/mainToolbar"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/teal"
+        app:title="Productos" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewProducts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:padding="16dp"
+            android:scrollbars="vertical" />
+
+        <Button
+            android:id="@+id/buttonAministration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Administración"
+            android:textColor="@color/black"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/yellow"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/buttonGoToCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cart"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@color/red"
+            android:layout_marginBottom="64dp" />
+
+        <Button
+            android:id="@+id/buttonMaps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maps"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
+            android:backgroundTint="@color/green"
+            android:layout_marginBottom="64dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
